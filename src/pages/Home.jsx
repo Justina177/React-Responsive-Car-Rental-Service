@@ -9,6 +9,7 @@ import ServicesList from '../components/UI/ServiceList';
 import carData from '../assets/data/carData'
 import BecomeDriverSection from '../components/UI/BecomedriverSection';
 import Testimonial from '../components/UI/Testmonial';
+import BlogList from '../components/UI/BlogList';
 
 const Home = () => {
   return (
@@ -78,6 +79,20 @@ const Home = () => {
             </Col>
 
             <Testimonial />
+          </Row>
+        </Container>
+      </section>
+
+      {/* =============== blog section =========== */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="mb-5 text-center">
+              <h6 className="section__subtitle">Explore our blogs</h6>
+              <h2 className="section__title">Latest Blogs</h2>
+            </Col>
+
+            <BlogList />
           </Row>
         </Container>
       </section>

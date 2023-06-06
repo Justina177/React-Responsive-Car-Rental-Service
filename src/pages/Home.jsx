@@ -2,9 +2,11 @@ import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import Helmet from '../components/Helmet/Helmet';
 import AboutSection from '../components/UI/AboutSection';
+import CarItem from '../components/UI/CarItems';
 import FindCarForm from '../components/UI/FindCardForm';
 import HeroSlider from '../components/UI/HeroSlider';
 import ServicesList from '../components/UI/ServiceList';
+import carData from '../assets/data/carData'
 
 const Home = () => {
   return (
@@ -42,6 +44,22 @@ const Home = () => {
             </Col>
 
             <ServicesList />
+          </Row>
+        </Container>
+      </section>
+
+      {/* =========== car offer section ============= */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="text-center mb-5">
+              <h6 className="section__subtitle">Check Out Our</h6>
+              <h2 className="section__title">Hot Offers</h2>
+            </Col>
+
+            {carData.slice(0, 6).map((item) => (
+              <CarItem item={item} key={item.id} />
+            ))}
           </Row>
         </Container>
       </section>

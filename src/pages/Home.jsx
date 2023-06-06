@@ -8,6 +8,7 @@ import HeroSlider from '../components/UI/HeroSlider';
 import ServicesList from '../components/UI/ServiceList';
 import carData from '../assets/data/carData'
 import BecomeDriverSection from '../components/UI/BecomedriverSection';
+import Testimonial from '../components/UI/Testmonial';
 
 const Home = () => {
   return (
@@ -66,6 +67,20 @@ const Home = () => {
       </section>
       {/* =========== become a driver section ============ */}
       <BecomeDriverSection />
+
+      {/* =========== testimonial section =========== */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12" className="mb-4 text-center">
+              <h6 className="section__subtitle">What Our clients says</h6>
+              <h2 className="section__title">Testimonials</h2>
+            </Col>
+
+            <Testimonial />
+          </Row>
+        </Container>
+      </section>
     </Helmet>    
   )
 }

@@ -7,6 +7,7 @@ import FindCarForm from '../components/UI/FindCardForm';
 import HeroSlider from '../components/UI/HeroSlider';
 import ServicesList from '../components/UI/ServiceList';
 import carData from '../assets/data/carData'
+import BecomeDriverSection from '../components/UI/BecomedriverSection';
 
 const Home = () => {
   return (
@@ -63,6 +64,8 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+      {/* =========== become a driver section ============ */}
+      <BecomeDriverSection />
     </Helmet>    
   )
 }

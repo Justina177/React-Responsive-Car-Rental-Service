@@ -55,6 +55,11 @@
   background: #020a4de9;
 }
 
+.section__description {
+  color: #ceb68f;
+  
+}
+
 .newsletter input {
   background: transparent;
   color: #fff;
@@ -68,5 +73,6 @@
 
 .footer__bottom {
   border-top: 1px solid #7c8a972f;
+  color: #ceb68f;
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import Helmet from '../components/Helmet/Helmet';
+import FindCarForm from '../components/UI/FindCardForm';
 import HeroSlider from '../components/UI/HeroSlider';
 
 const Home = () => {
@@ -18,6 +19,10 @@ const Home = () => {
                 <div className="find__cars-left">
                   <h2>Find your best car here</h2>
                 </div>
+              </Col>
+
+              <Col lg="8" md="8" sm="12">
+                <FindCarForm />
               </Col>
 
               
